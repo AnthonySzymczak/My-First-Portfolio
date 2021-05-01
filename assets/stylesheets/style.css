@@ -41,6 +41,14 @@ header{
     flex-wrap: wrap;
     justify-content: center;
 }
+.About-Me{
+    padding: 10px;
+    margin: 10px;
+    color: rgb(0, 0, 0);
+    background-image:radial-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.76));
+    justify-content: center;
+    text-align: center;
+}
 .h3-background{
     background-image:radial-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.76));
     padding: 5px;
@@ -67,6 +75,7 @@ a:hover {
 section ul{
     display: flex;
     margin-bottom: 10px;
+    justify-content: center;
 }
 section ul li{
     list-style: none;
@@ -75,21 +84,34 @@ section ul li{
     margin: 5px;
     letter-spacing: 2px;
     cursor: pointer;
+    justify-content: center;
 }
 section ul li.active {
     background: rgb(46, 245, 245);
     color: #fff;
+    justify-content: center;
+}
+article{
+    list-style: none;
+    background: rgb(0, 0, 0);
+    color: white;
+    padding: 8px 20px;
+    margin: 5px;
+    letter-spacing: 2px;
+    justify-content: center;
 }
 footer {
     background-image:linear-gradient(rgba(0, 0, 0, 0),rgb(0, 0, 0) );
     padding: 5px;
-    width: auto;
+    width: relative;
     color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content: center;
+    text-align: left;
     padding: 20px;
-    position: relative;
+    position: bottom;
 
 }
 /*Flex Box wrapping*/
@@ -100,14 +122,15 @@ footer {
 {
   display: flex;
   flex-wrap: wrap;
-  opacity: 90%;
+  justify-content: center;
 }
 .product .itemBox
 {
     position: relative;
     width: 300px;
     height: 300px;
-    margin: 5px;
+    margin: 15px;
+    justify-content: center;
 }
 .product .itemBox img
 {
@@ -117,4 +140,5 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    justify-content: center;
 }
