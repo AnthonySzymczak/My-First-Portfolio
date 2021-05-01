@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,21 +11,80 @@
     <link rel="stylesheet" href="assets/stylesheets/style.css" />
 
 </head>
+
 <body>
+    <!--My Brand -->
+
+
     <!--Header-->
     <header>
-        <!--My Brand -->
-        <div>
-            <img src="assets/images/Original.png" width="2000px" height="2000px" alt="My Brand">
-        </div> 
-        <nav>
-            <ul>
-                <li><a href="index.html">Main Page</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="my-work.html">My Work</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
+        <div class="Face"></div>
+        <div class="My-Brand">
+            <img class="brand-img" src="assets/images/brand-img.png" alt="My Brand">
+        </div>
     </header>
+    <section>
+
+        <h3> Here you will see a Gallery of completed projects. </h3>
+
+        <ul>
+            <li class="list active" data-filter="All">All</li>
+            <li class="list" data-filter="Run-buddy">Run-buddy</li>
+            <li class="list" data-filter="Horiseon">Horiseon</li>
+            <li class="list" data-filter="Gallery">Gallery</li>
+
+        </ul>
+        <!--* Div section that houses all images for Runbuddy, Horiseon, Gallery-->
+        <div class="product">
+            <nav class="itemBox Run-buddy"><a href ="https://anthonyszymczak.github.io/run-buddy/" ><img src="assets/images/run-buddy-1.png" width="150px" height="150px"></a></nav>
+            <nav class="itemBox Run-buddy"><a href ="https://anthonyszymczak.github.io/run-buddy/" ><img src="assets/images/run-buddy-2.png" width="150px" height="150px"></a></nav>
+            <nav class="itemBox Run-buddy"><a href ="https://anthonyszymczak.github.io/run-buddy/" ><img src="assets/images/run-buddy-3.png" width="150px" height="150px"></a></nav>
+            <nav class="itemBox Run-buddy"><a href ="https://anthonyszymczak.github.io/run-buddy/" ><img src="assets/images/run-buddy-4.png" width="150px" height="150px"></a></nav>
+            <nav class="itemBox Horiseon"><a href ="https://anthonyszymczak.github.io/Challenge-Horiseon/" ><img src="assets/images/Horiseon-1.png" width="150px" height="150px"></a></nav>
+            <nav class="itemBox Horiseon"><a href ="https://anthonyszymczak.github.io/Challenge-Horiseon/" ><img src="assets/images/Horiseon-2.png" width="150px" height="150px"></a></nav>
+            <nav class="itemBox Horiseon"><a href ="https://anthonyszymczak.github.io/Challenge-Horiseon/" ><img src="assets/images/Horiseon-3.png" width="150px" height="150px"></a></nav>
+            <nav class="itemBox Horiseon"><a href ="https://anthonyszymczak.github.io/Challenge-Horiseon/" ><img src="assets/images/Horiseon-4.png" width="150px" height="150px"></a></nav>
+            <nav class="itemBox Gallery"><a href ="https://anthonyszymczak.github.io/Gallery/" ><img src="assets/images/Gallery-1.png" width="150px" height="150px"></a></nav>
+            <nav class="itemBox Gallery"><a href ="https://anthonyszymczak.github.io/Gallery/" ><img src="assets/images/Gallery-2.png" width="150px" height="150px"></a></nav>
+            <nav class="itemBox Gallery"><a href ="https://anthonyszymczak.github.io/Gallery/" ><img src="assets/images/Gallery-3.png" width="150px" height="150px"></a></nav>
+            <nav class="itemBox Gallery"><a href ="https://anthonyszymczak.github.io/Gallery/" ><img src="assets/images/Gallery-4.png" width="150px" height="150px"></a></nav>
+
+        </div>
+    </section>
+    <article>
+        <h4> Links to my projects </h4>
+        <ul>
+            <li> <a href ="https://anthonyszymczak.github.io/run-buddy/" >https://anthonyszymczak.github.io/run-buddy/</li>
+            <li> <a href ="https://anthonyszymczak.github.io/Challenge-Horiseon/" >https://anthonyszymczak.github.io/Challenge-Horiseon/</li>
+            <li> <a href ="https://anthonyszymczak.github.io/Gallery/" >https://anthonyszymczak.github.io/Gallery/</li>
+        </ul>
+    </article>
+
+    <!--* Jquery interactive-->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+        </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.list').click(function () {
+                const value = $(this).attr('data-filter');
+                if (value == 'All') {
+                    $('.itemBox').show('1000');
+                }
+                else {
+                    $('.itemBox').not('.' + value).hide('1000');
+                    $('.itemBox').filter('.' + value).show('1000');
+                }
+            })
+            // adding active class on selected items only
+
+            $('.list').click(function () {
+                $(this).addClass('active').siblings().removeClass('active');
+            })
+        })
+    </script>
 </body>
+
 </html>
