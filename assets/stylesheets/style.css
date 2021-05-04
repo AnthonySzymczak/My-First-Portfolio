@@ -60,6 +60,30 @@ header{
     
     
 }
+nav {
+
+    margin: 7px 0;
+    color: cyan;
+  }
+nav ul {
+    color: cyan;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  nav a {
+    text-decoration: none;
+    background-color: cyan;
+    color: black;
+  }
+  
+ nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 1.5vw;
+  }
 
   /*Section tags*/
   section {
@@ -142,3 +166,115 @@ footer {
     object-fit: cover;
     justify-content: center;
 }
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+  }
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header h2 {
+    width: 100%;
+    text-align: center;
+  }
+  article {
+      width: 100%;
+    text-align: center;
+    }
+    footer{
+        width: 100%;
+        text-align: center;
+    }
+    .product{
+    width: 100%;
+    text-align: center;
+    }
+    .About-Me{
+        width: 100%;
+        text-align: center;
+        }
+    .list{
+        width: auto;
+        text-align: center;
+    }
+}
+
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+}
+header h1 {
+  width: 100%;
+  text-align: center;
+}
+  
+
+.About-Me{
+    width: 100%;
+    text-align: center;
+    }
+header h2 {
+  width: 100%;
+  text-align: center;
+}
+article {
+    width: 100%;
+  text-align: center;
+  }
+  footer{
+    width: 100%;
+    text-align: center;
+}
+.product{
+    width: 100%;
+    text-align: center;
+    }
+ 
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+  .Face {
+    width: 100%;
+  }
+
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+}
+header h1 {
+  width: 100%;
+  text-align: center;
+}
+
+header h2 {
+  width: 100%;
+  text-align: center;
+}
+article {
+    width: 100%;
+  text-align: center;
+  }
+  footer{
+    width: 100%;
+    text-align: center;
+}
+.product{
+    width: 100%;
+    text-align: center;
+    }
+    .About-Me{
+        width: 100%;
+        text-align: center;
+        }
+  }
