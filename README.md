@@ -6,6 +6,8 @@ There will also be a link to my personal website which is still under developmen
 
 Below you will see multiple screen shots of the current portfolio.
 
+![Portfolio-1](https://user-images.githubusercontent.com/81388435/117046175-5d1f9480-acde-11eb-8d03-53e4b42f3a9f.png)
+
 
 Here is a link to the Portfolio!
 https://anthonyszymczak.github.io/My-First-Portfolio/
