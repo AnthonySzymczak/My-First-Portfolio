@@ -40,16 +40,21 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-.About-Me{
+  }
+  .About-Me{
     padding: 10px;
     margin: 10px;
     color: rgb(0, 0, 0);
     background-image:radial-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.76));
     justify-content: center;
     text-align: center;
-}
-.h3-background{
+  }
+  .Crypto {
+    text-emphasis-color: white;
+    text-align: center;
+    background-color: #fff;
+  }
+  .h3-background{
     background-image:radial-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.76));
     padding: 5px;
     width: auto;
